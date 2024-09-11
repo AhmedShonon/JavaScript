@@ -1,0 +1,17 @@
+function checkDigitsInName(name) {
+  if (typeof name !== "string") {
+    return "Invalid Input";
+  }
+
+  const hasDigits = /\d/.test(name);
+
+  return hasDigits;
+}
+
+console.log(checkDigitsInName("n9ayeem"));
+console.log(checkDigitsInName("e1mu3"));
+console.log(checkDigitsInName("Suman"));
+console.log(checkDigitsInName("Name2024"));
+console.log(checkDigitsInName("!@#"));
+console.log(checkDigitsInName(["Raj"]));
+console.log(checkDigitsInName("Raj123"));
