@@ -3,7 +3,7 @@ function sendNotification(email) {
     return "Invalid Email";
   }
   const [username, domain] = email.split("@");
-  return `${username} sent you an email from ${domain}`;
+  return username + " " + " sent you an email from " + " " + domain;
 }
 
 console.log(sendNotification("zihad@gmail.com")); // zihad sent you an email from gmail.com
